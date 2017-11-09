@@ -1,0 +1,12 @@
+#ifndef APIWRAPPER_GLOBAL_H
+#define APIWRAPPER_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(APIWRAPPER_LIBRARY)
+#  define APIWRAPPERSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define APIWRAPPERSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // APIWRAPPER_GLOBAL_H
